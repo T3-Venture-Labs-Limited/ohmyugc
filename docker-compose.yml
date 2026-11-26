@@ -1,0 +1,18 @@
+services:
+  oh-my-ugc:
+    build: .
+    image: oh-my-ugc
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./data:/data
+    environment:
+      # Provider keys. They can also be added in the web app under Settings.
+      - REPLICATE_API_TOKEN=${REPLICATE_API_TOKEN:-}
+      - FAL_KEY=${FAL_KEY:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY:-}
+      - FISH_API_KEY=${FISH_API_KEY:-}
+      # Extra host names the app may be reached on (it answers only on 127.0.0.1 and localhost otherwise).
+      - OMU_ALLOWED_HOSTS=${OMU_ALLOWED_HOSTS:-}
+    restart: unless-stopped

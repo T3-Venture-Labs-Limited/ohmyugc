@@ -1,0 +1,103 @@
+{
+ "id": "replicate/seedance-1.5-pro",
+ "provider": "replicate",
+ "model": "bytedance/seedance-1.5-pro",
+ "name": "Seedance 1.5 Pro",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": "image",
+  "last_frame": "last_frame_image",
+  "duration": {
+   "param": "duration",
+   "as": "int"
+  },
+  "resolution": "resolution",
+  "aspect_ratio": "aspect_ratio",
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  },
+  "seed": {
+   "param": "seed",
+   "as": "int"
+  }
+ },
+ "limits": {
+  "durations": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "resolutions": [
+   "480p",
+   "720p",
+   "1080p"
+  ],
+  "aspect_ratios": [
+   "16:9",
+   "4:3",
+   "1:1",
+   "3:4",
+   "9:16",
+   "21:9"
+  ]
+ },
+ "multi_shot": true,
+ "native_audio": true,
+ "price": {
+  "unit": "second",
+  "default": 0.026,
+  "table": [
+   {
+    "when": {
+     "resolution": "480p",
+     "audio": false
+    },
+    "price": 0.013
+   },
+   {
+    "when": {
+     "resolution": "480p",
+     "audio": true
+    },
+    "price": 0.025
+   },
+   {
+    "when": {
+     "resolution": "720p",
+     "audio": false
+    },
+    "price": 0.026
+   },
+   {
+    "when": {
+     "resolution": "720p",
+     "audio": true
+    },
+    "price": 0.052
+   },
+   {
+    "when": {
+     "resolution": "1080p",
+     "audio": false
+    },
+    "price": 0.06
+   },
+   {
+    "when": {
+     "resolution": "1080p",
+     "audio": true
+    },
+    "price": 0.12
+   }
+  ]
+ },
+ "notes": "TEST FIXTURE: a retired model kept only as a stable example for tests. Two-shot blocks work. Small label text garbles in motion; the real-product shots cover that."
+}

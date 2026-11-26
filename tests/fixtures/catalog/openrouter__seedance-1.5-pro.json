@@ -1,0 +1,79 @@
+{
+ "id": "openrouter/seedance-1.5-pro",
+ "provider": "openrouter",
+ "model": "bytedance/seedance-1-5-pro",
+ "name": "Seedance 1.5 Pro",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": {
+   "param": "frame_images",
+   "role": "first_frame"
+  },
+  "last_frame": {
+   "param": "frame_images",
+   "role": "last_frame"
+  },
+  "duration": {
+   "param": "duration",
+   "as": "int"
+  },
+  "resolution": "resolution",
+  "aspect_ratio": "aspect_ratio",
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  },
+  "seed": {
+   "param": "seed",
+   "as": "int"
+  }
+ },
+ "limits": {
+  "durations": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "resolutions": [
+   "480p",
+   "720p",
+   "1080p"
+  ],
+  "aspect_ratios": [
+   "1:1",
+   "3:4",
+   "9:16",
+   "4:3",
+   "16:9",
+   "21:9"
+  ]
+ },
+ "multi_shot": true,
+ "native_audio": true,
+ "price": {
+  "unit": "token",
+  "default": 1.2e-06,
+  "table": [
+   {
+    "when": {
+     "audio": false
+    },
+    "price": 1.2e-06
+   },
+   {
+    "when": {
+     "audio": true
+    },
+    "price": 2.4e-06
+   }
+  ]
+ },
+ "notes": "TEST FIXTURE: a retired model kept only as a stable example for tests."
+}

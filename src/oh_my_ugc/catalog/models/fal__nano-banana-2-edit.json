@@ -1,0 +1,71 @@
+{
+ "id": "fal/nano-banana-2-edit",
+ "provider": "fal",
+ "model": "fal-ai/nano-banana-2/edit",
+ "name": "Nano Banana 2 (edit)",
+ "task": "image_edit",
+ "inputs": {
+  "prompt": "prompt",
+  "reference_images": {
+   "param": "image_urls",
+   "as": "list"
+  },
+  "aspect_ratio": "aspect_ratio",
+  "resolution": "resolution"
+ },
+ "extra": {
+  "output_format": "png",
+  "limit_generations": true
+ },
+ "limits": {
+  "resolutions": [
+   "0.5K",
+   "1K",
+   "2K",
+   "4K"
+  ],
+  "aspect_ratios": [
+   "1:1",
+   "2:3",
+   "3:2",
+   "3:4",
+   "4:3",
+   "4:5",
+   "5:4",
+   "9:16",
+   "16:9",
+   "21:9"
+  ],
+  "max_references": 14
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.08,
+  "table": [
+   {
+    "when": {
+     "resolution": "0.5K"
+    },
+    "price": 0.06
+   },
+   {
+    "when": {
+     "resolution": "1K"
+    },
+    "price": 0.08
+   },
+   {
+    "when": {
+     "resolution": "2K"
+    },
+    "price": 0.12
+   },
+   {
+    "when": {
+     "resolution": "4K"
+    },
+    "price": 0.16
+   }
+  ]
+ }
+}

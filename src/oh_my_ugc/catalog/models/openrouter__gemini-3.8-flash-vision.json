@@ -1,0 +1,13 @@
+{
+ "id": "openrouter/gemini-3.8-flash-vision",
+ "provider": "openrouter",
+ "model": "google/gemini-3.8-flash",
+ "name": "Gemini 3.8 Flash",
+ "task": "vision_check",
+ "price": {
+  "unit": "run",
+  "default": 0.005
+ },
+ "notes": "Compares frames with the real product photo.",
+ "inputs": {}
+}

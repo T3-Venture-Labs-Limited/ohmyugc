@@ -1,0 +1,22 @@
+{
+  "name": "Sticker",
+  "description": "Chunky rounded letters with a thick purple outline, tilted like stickers.",
+  "font": "Lilita One",
+  "size": 0.062,
+  "case": "none",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFE14D",
+  "emphasis_color": "#FFE14D",
+  "outline_color": "#7B2FF7",
+  "outline": 0.15,
+  "shadow_color": "#2B0A57",
+  "shadow": 0.07,
+  "shadow_alpha": 1.0,
+  "tilt": 5,
+  "max_words": 2,
+  "max_chars": 14,
+  "enter": "pop",
+  "active_anim": "pop",
+  "active_scale": 1.1,
+  "position": 0.66
+}

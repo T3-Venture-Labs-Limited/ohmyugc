@@ -1,0 +1,43 @@
+{
+ "id": "openrouter/nano-banana-2.1",
+ "provider": "openrouter",
+ "model": "google/gemini-nano-banana-2.1",
+ "name": "Nano Banana 2.1 (edit)",
+ "task": "image_edit",
+ "inputs": {
+  "prompt": "prompt",
+  "reference_images": {
+   "param": "input_references",
+   "as": "image_url_list"
+  },
+  "aspect_ratio": "aspect_ratio",
+  "resolution": "resolution"
+ },
+ "extra": {
+  "__kind": "image"
+ },
+ "limits": {
+  "resolutions": [
+   "1K",
+   "2K",
+   "4K"
+  ],
+  "aspect_ratios": [
+   "1:1",
+   "2:3",
+   "3:2",
+   "3:4",
+   "4:3",
+   "4:5",
+   "5:4",
+   "9:16",
+   "16:9",
+   "21:9"
+  ],
+  "max_references": 14
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.07
+ }
+}

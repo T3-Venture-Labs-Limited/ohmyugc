@@ -1,0 +1,63 @@
+{
+ "id": "replicate/nano-banana-2",
+ "provider": "replicate",
+ "model": "google/nano-banana-2",
+ "name": "Nano Banana 2 (edit)",
+ "task": "image_edit",
+ "inputs": {
+  "prompt": "prompt",
+  "reference_images": {
+   "param": "image_input",
+   "as": "list"
+  },
+  "aspect_ratio": "aspect_ratio",
+  "resolution": "resolution"
+ },
+ "extra": {
+  "output_format": "jpg"
+ },
+ "limits": {
+  "resolutions": [
+   "1K",
+   "2K",
+   "4K"
+  ],
+  "aspect_ratios": [
+   "1:1",
+   "2:3",
+   "3:2",
+   "3:4",
+   "4:3",
+   "4:5",
+   "5:4",
+   "9:16",
+   "16:9",
+   "21:9"
+  ],
+  "max_references": 14
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.067,
+  "table": [
+   {
+    "when": {
+     "resolution": "1K"
+    },
+    "price": 0.067
+   },
+   {
+    "when": {
+     "resolution": "2K"
+    },
+    "price": 0.101
+   },
+   {
+    "when": {
+     "resolution": "4K"
+    },
+    "price": 0.151
+   }
+  ]
+ }
+}

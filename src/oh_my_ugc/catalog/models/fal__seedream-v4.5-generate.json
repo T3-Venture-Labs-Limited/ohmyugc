@@ -1,0 +1,14 @@
+{
+ "id": "fal/seedream-v4.5-generate",
+ "provider": "fal",
+ "model": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+ "name": "Seedream 4.5",
+ "task": "image_generation",
+ "inputs": {
+  "prompt": "prompt"
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.04
+ }
+}

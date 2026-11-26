@@ -1,0 +1,22 @@
+{
+  "name": "Boxed",
+  "description": "Tall condensed capitals with a bright box behind the word being spoken.",
+  "font": "Anton",
+  "size": 0.062,
+  "case": "upper",
+  "spacing": 0.02,
+  "text_color": "#FFFFFF",
+  "active_color": "#FFFFFF",
+  "emphasis_color": "#FFFFFF",
+  "box": "word",
+  "box_color": "#FF2E7E",
+  "outline": 0.06,
+  "shadow": 0.0,
+  "max_words": 3,
+  "max_chars": 18,
+  "enter": "pop",
+  "active_anim": "pop",
+  "active_scale": 1.06,
+  "emphasis_scale": 1.0,
+  "position": 0.66
+}

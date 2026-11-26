@@ -1,0 +1,24 @@
+{
+ "id": "fal/omnihuman-v1.5",
+ "provider": "fal",
+ "model": "fal-ai/bytedance/omnihuman/v1.5",
+ "name": "OmniHuman 1.5",
+ "task": "talking_avatar",
+ "inputs": {
+  "first_frame": "image_url",
+  "audio": "audio_url",
+  "resolution": "resolution",
+  "prompt": "prompt"
+ },
+ "limits": {
+  "resolutions": [
+   "720p",
+   "1080p"
+  ],
+  "max_duration": 30.0
+ },
+ "price": {
+  "unit": "second",
+  "default": 0.16
+ }
+}

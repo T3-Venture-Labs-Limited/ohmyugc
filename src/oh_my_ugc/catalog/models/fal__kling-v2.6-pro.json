@@ -1,0 +1,53 @@
+{
+ "id": "fal/kling-v2.6-pro",
+ "provider": "fal",
+ "model": "fal-ai/kling-video/v2.6/pro/image-to-video",
+ "name": "Kling 2.6 Pro",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": "start_image_url",
+  "last_frame": "end_image_url",
+  "duration": {
+   "param": "duration",
+   "as": "str"
+  },
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  }
+ },
+ "limits": {
+  "durations": [
+   5,
+   10
+  ],
+  "resolutions": [
+   "1080p"
+  ],
+  "aspect_ratios": [
+   "16:9",
+   "9:16",
+   "1:1"
+  ]
+ },
+ "native_audio": true,
+ "price": {
+  "unit": "second",
+  "default": 0.07,
+  "table": [
+   {
+    "when": {
+     "audio": false
+    },
+    "price": 0.07
+   },
+   {
+    "when": {
+     "audio": true
+    },
+    "price": 0.14
+   }
+  ]
+ }
+}

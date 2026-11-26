@@ -1,0 +1,15 @@
+{
+ "id": "replicate/omni-human",
+ "provider": "replicate",
+ "model": "bytedance/omni-human",
+ "name": "OmniHuman",
+ "task": "talking_avatar",
+ "inputs": {
+  "first_frame": "image",
+  "audio": "audio"
+ },
+ "limits": {
+  "max_duration": 30.0
+ },
+ "notes": "Price is read from the model page."
+}

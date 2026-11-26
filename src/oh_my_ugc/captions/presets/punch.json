@@ -1,0 +1,18 @@
+{
+  "name": "Punch",
+  "description": "Heavy capitals, two or three words at a time, the spoken word in yellow. The high-energy talking-head look.",
+  "font": "Montserrat Black",
+  "size": 0.058,
+  "case": "upper",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFE14D",
+  "emphasis_color": "#5BFF6E",
+  "outline": 0.09,
+  "shadow": 0.05,
+  "max_words": 3,
+  "max_chars": 16,
+  "enter": "pop",
+  "active_anim": "pop",
+  "active_scale": 1.1,
+  "position": 0.66
+}

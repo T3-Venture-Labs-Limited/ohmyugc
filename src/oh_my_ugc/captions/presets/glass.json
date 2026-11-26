@@ -1,0 +1,21 @@
+{
+  "name": "Glass",
+  "description": "Short phrases on a dark translucent band, with the spoken word in mint.",
+  "font": "Poppins ExtraBold",
+  "size": 0.044,
+  "case": "none",
+  "text_color": "#FFFFFF",
+  "active_color": "#8AFFC1",
+  "emphasis_color": "#8AFFC1",
+  "box": "line",
+  "box_color": "#0B0B12",
+  "box_alpha": 0.62,
+  "outline": 0.0,
+  "shadow": 0.0,
+  "max_words": 4,
+  "max_chars": 22,
+  "enter": "slide",
+  "active_anim": "none",
+  "emphasis_scale": 1.0,
+  "position": 0.7
+}

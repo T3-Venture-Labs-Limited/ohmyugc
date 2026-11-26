@@ -1,0 +1,8 @@
+.venv
+.git
+frontend/node_modules
+src/oh_my_ugc/web
+data
+**/__pycache__
+.pytest_cache
+.ruff_cache

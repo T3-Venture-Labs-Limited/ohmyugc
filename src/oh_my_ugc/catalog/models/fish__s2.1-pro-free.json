@@ -1,0 +1,18 @@
+{
+ "id": "fish/s2.1-pro-free",
+ "provider": "fish",
+ "model": "s2.1-pro-free",
+ "name": "Fish Audio S2.1 Pro (free)",
+ "task": "speech",
+ "inputs": {
+  "text": "text",
+  "voice": "voice",
+  "speed": {
+   "param": "speed",
+   "as": "float"
+  }
+ },
+ "price": {
+  "unit": "free"
+ }
+}

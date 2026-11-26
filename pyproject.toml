@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oh-my-ugc"
+version = "0.1.0"
+description = "Free, open-source UGC ad maker. Product photos and a script in, AI-actor video ads out, using your own Replicate, fal and OpenRouter keys. No credits, no watermark, and your real product in every shot."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11,<3.13"
+keywords = [
+  "ugc", "ai-ugc", "ugc-ads", "video-ads", "makeugc-alternative", "arcads-alternative", "ai-actors",
+  "tiktok-ads", "replicate", "fal", "openrouter", "seedance", "kling", "ffmpeg",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+  "Environment :: Web Environment",
+]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "fonttools>=4.50",
+  "httpx>=0.28,<1",
+  "numpy>=1.26",
+  "pillow>=10.4",
+  "pydantic>=2.10,<3",
+  "python-multipart>=0.0.12",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+# Per-clip transcription for native-dialogue shots (otherwise words are spread over detected speech).
+transcribe = ["faster-whisper>=1.1", "protobuf>=5.29.6"]
+
+[project.urls]
+Homepage = "https://github.com/T3-Venture-Labs-Limited/ohmyugc"
+Issues = "https://github.com/T3-Venture-Labs-Limited/ohmyugc/issues"
+
+[project.scripts]
+oh-my-ugc = "oh_my_ugc.cli:main"
+omu = "oh_my_ugc.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8.3", "ruff>=0.11"]
+
+[tool.hatch.build]
+# The built web UI is gitignored but must ship in the wheel.
+artifacts = ["src/oh_my_ugc/web/"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oh_my_ugc"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501", "B008", "SIM105", "SIM401", "SIM115", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

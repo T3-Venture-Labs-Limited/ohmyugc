@@ -1,0 +1,15 @@
+{
+ "id": "replicate/lipsync-2",
+ "provider": "replicate",
+ "model": "sync/lipsync-2",
+ "name": "Sync Lipsync 2",
+ "task": "lipsync",
+ "inputs": {
+  "video": "video",
+  "audio": "audio"
+ },
+ "extra": {
+  "sync_mode": "loop"
+ },
+ "notes": "Price is read from the model page."
+}

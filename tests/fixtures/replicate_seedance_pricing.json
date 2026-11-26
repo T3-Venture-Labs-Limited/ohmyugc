@@ -1,0 +1,186 @@
+{
+ "billingConfig": {
+  "current_tiers": [
+   {
+    "criteria": [
+     {
+      "description": "with_audio",
+      "subtype": "string",
+      "title": "model variant",
+      "type": "equals",
+      "value": "with_audio"
+     },
+     {
+      "description": "480p",
+      "subtype": "string",
+      "title": "target resolution",
+      "type": "equals",
+      "value": "480p"
+     }
+    ],
+    "description": null,
+    "prices": [
+     {
+      "description": "or 40 seconds for $1",
+      "metric": "video_output_duration_seconds",
+      "metric_display": "second of output video",
+      "price": "$0.025",
+      "title": "per second of output video",
+      "type": "per-unit"
+     }
+    ],
+    "title": null
+   },
+   {
+    "criteria": [
+     {
+      "description": "without_audio",
+      "subtype": "string",
+      "title": "model variant",
+      "type": "equals",
+      "value": "without_audio"
+     },
+     {
+      "description": "480p",
+      "subtype": "string",
+      "title": "target resolution",
+      "type": "equals",
+      "value": "480p"
+     }
+    ],
+    "description": null,
+    "prices": [
+     {
+      "description": "or around 76 seconds for $1",
+      "metric": "video_output_duration_seconds",
+      "metric_display": "second of output video",
+      "price": "$0.013",
+      "title": "per second of output video",
+      "type": "per-unit"
+     }
+    ],
+    "title": null
+   },
+   {
+    "criteria": [
+     {
+      "description": "with_audio",
+      "subtype": "string",
+      "title": "model variant",
+      "type": "equals",
+      "value": "with_audio"
+     },
+     {
+      "description": "720p",
+      "subtype": "string",
+      "title": "target resolution",
+      "type": "equals",
+      "value": "720p"
+     }
+    ],
+    "description": null,
+    "prices": [
+     {
+      "description": "or around 19 seconds for $1",
+      "metric": "video_output_duration_seconds",
+      "metric_display": "second of output video",
+      "price": "$0.052",
+      "title": "per second of output video",
+      "type": "per-unit"
+     }
+    ],
+    "title": null
+   },
+   {
+    "criteria": [
+     {
+      "description": "without_audio",
+      "subtype": "string",
+      "title": "model variant",
+      "type": "equals",
+      "value": "without_audio"
+     },
+     {
+      "description": "720p",
+      "subtype": "string",
+      "title": "target resolution",
+      "type": "equals",
+      "value": "720p"
+     }
+    ],
+    "description": null,
+    "prices": [
+     {
+      "description": "or around 38 seconds for $1",
+      "metric": "video_output_duration_seconds",
+      "metric_display": "second of output video",
+      "price": "$0.026",
+      "title": "per second of output video",
+      "type": "per-unit"
+     }
+    ],
+    "title": null
+   },
+   {
+    "criteria": [
+     {
+      "description": "with_audio",
+      "subtype": "string",
+      "title": "model variant",
+      "type": "equals",
+      "value": "with_audio"
+     },
+     {
+      "description": "1080p",
+      "subtype": "string",
+      "title": "target resolution",
+      "type": "equals",
+      "value": "1080p"
+     }
+    ],
+    "description": null,
+    "prices": [
+     {
+      "description": "or around 83 seconds for $10",
+      "metric": "video_output_duration_seconds",
+      "metric_display": "second of output video",
+      "price": "$0.12",
+      "title": "per second of output video",
+      "type": "per-unit"
+     }
+    ],
+    "title": null
+   },
+   {
+    "criteria": [
+     {
+      "description": "without_audio",
+      "subtype": "string",
+      "title": "model variant",
+      "type": "equals",
+      "value": "without_audio"
+     },
+     {
+      "description": "1080p",
+      "subtype": "string",
+      "title": "target resolution",
+      "type": "equals",
+      "value": "1080p"
+     }
+    ],
+    "description": null,
+    "prices": [
+     {
+      "description": "or around 16 seconds for $1",
+      "metric": "video_output_duration_seconds",
+      "metric_display": "second of output video",
+      "price": "$0.06",
+      "title": "per second of output video",
+      "type": "per-unit"
+     }
+    ],
+    "title": null
+   }
+  ]
+ }
+}

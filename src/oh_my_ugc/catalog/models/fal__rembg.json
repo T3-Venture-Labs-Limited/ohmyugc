@@ -1,0 +1,13 @@
+{
+ "id": "fal/rembg",
+ "provider": "fal",
+ "model": "fal-ai/imageutils/rembg",
+ "name": "Remove background",
+ "task": "background_removal",
+ "inputs": {
+  "image": "image_url"
+ },
+ "price": {
+  "unit": "free"
+ }
+}

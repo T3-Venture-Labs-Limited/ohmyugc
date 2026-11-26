@@ -1,0 +1,81 @@
+{
+ "id": "openrouter/veo-3.1-fast",
+ "provider": "openrouter",
+ "model": "google/veo-3.1-fast",
+ "name": "Veo 3.1 Fast",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": {
+   "param": "frame_images",
+   "role": "first_frame"
+  },
+  "last_frame": {
+   "param": "frame_images",
+   "role": "last_frame"
+  },
+  "duration": {
+   "param": "duration",
+   "as": "int"
+  },
+  "resolution": "resolution",
+  "aspect_ratio": "aspect_ratio",
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  },
+  "seed": {
+   "param": "seed",
+   "as": "int"
+  }
+ },
+ "limits": {
+  "durations": [
+   4,
+   6,
+   8
+  ],
+  "resolutions": [
+   "720p",
+   "1080p",
+   "4K"
+  ],
+  "aspect_ratios": [
+   "16:9",
+   "9:16"
+  ]
+ },
+ "native_audio": true,
+ "price": {
+  "unit": "second",
+  "default": 0.1,
+  "table": [
+   {
+    "when": {
+     "audio": false,
+     "resolution": "720p"
+    },
+    "price": 0.08
+   },
+   {
+    "when": {
+     "audio": true,
+     "resolution": "720p"
+    },
+    "price": 0.1
+   },
+   {
+    "when": {
+     "audio": false
+    },
+    "price": 0.1
+   },
+   {
+    "when": {
+     "audio": true
+    },
+    "price": 0.12
+   }
+  ]
+ }
+}

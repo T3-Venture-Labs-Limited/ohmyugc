@@ -1,0 +1,19 @@
+{
+ "id": "fish/s2-pro",
+ "provider": "fish",
+ "model": "s2-pro",
+ "name": "Fish Audio S2 Pro",
+ "task": "speech",
+ "inputs": {
+  "text": "text",
+  "voice": "voice",
+  "speed": {
+   "param": "speed",
+   "as": "float"
+  }
+ },
+ "price": {
+  "unit": "1k_chars",
+  "default": 0.015
+ }
+}

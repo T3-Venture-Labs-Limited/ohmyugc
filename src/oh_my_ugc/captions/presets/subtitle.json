@@ -1,0 +1,23 @@
+{
+  "name": "Subtitle",
+  "description": "Classic two-line subtitles on a dark band, for YouTube and landscape video.",
+  "font": "Poppins Bold",
+  "size": 0.04,
+  "case": "none",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFFFFF",
+  "emphasis_color": "#FFFFFF",
+  "box": "line",
+  "box_color": "#000000",
+  "box_alpha": 0.6,
+  "outline": 0.0,
+  "shadow": 0.0,
+  "max_words": 14,
+  "max_chars": 42,
+  "lines": 2,
+  "enter": "none",
+  "active_anim": "none",
+  "emphasis_scale": 1.0,
+  "position": 0.86,
+  "punctuation": true
+}

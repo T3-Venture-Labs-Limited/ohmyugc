@@ -1,0 +1,21 @@
+{
+  "name": "Comic",
+  "description": "Yellow comic-book lettering with a hard drop shadow and a slight tilt.",
+  "font": "Bangers",
+  "size": 0.078,
+  "case": "upper",
+  "spacing": 0.04,
+  "text_color": "#FFE600",
+  "active_color": "#FFFFFF",
+  "emphasis_color": "#FF5A1F",
+  "outline": 0.12,
+  "shadow": 0.08,
+  "shadow_alpha": 1.0,
+  "tilt": 4,
+  "max_words": 2,
+  "max_chars": 14,
+  "enter": "pop",
+  "active_anim": "pop",
+  "active_scale": 1.12,
+  "position": 0.66
+}

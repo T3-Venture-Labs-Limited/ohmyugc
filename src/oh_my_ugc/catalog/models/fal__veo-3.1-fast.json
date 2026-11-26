@@ -1,0 +1,60 @@
+{
+ "id": "fal/veo-3.1-fast",
+ "provider": "fal",
+ "model": "fal-ai/veo3.1/fast/image-to-video",
+ "name": "Veo 3.1 Fast",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": "image_url",
+  "duration": {
+   "param": "duration",
+   "as": "seconds_str"
+  },
+  "resolution": "resolution",
+  "aspect_ratio": "aspect_ratio",
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  },
+  "seed": {
+   "param": "seed",
+   "as": "int"
+  }
+ },
+ "limits": {
+  "durations": [
+   4,
+   6,
+   8
+  ],
+  "resolutions": [
+   "720p",
+   "1080p",
+   "4k"
+  ],
+  "aspect_ratios": [
+   "16:9",
+   "9:16"
+  ]
+ },
+ "native_audio": true,
+ "price": {
+  "unit": "second",
+  "default": 0.1,
+  "table": [
+   {
+    "when": {
+     "audio": false
+    },
+    "price": 0.1
+   },
+   {
+    "when": {
+     "audio": true
+    },
+    "price": 0.15
+   }
+  ]
+ }
+}

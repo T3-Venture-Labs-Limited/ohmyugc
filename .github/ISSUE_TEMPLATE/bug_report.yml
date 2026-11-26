@@ -1,0 +1,38 @@
+name: Bug report
+description: Something does not work as expected.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add a product with two photos…
+        2. Draft the storyboard…
+        3. Render a draft…
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `omu doctor --json`
+      description: It never contains keys, but check before pasting.
+      render: json
+  - type: input
+    id: setup
+    attributes:
+      label: Setup
+      placeholder: "Docker / from source, OS, browser, which provider and model"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message
+      description: The sentence the app showed, or the terminal output.
+      render: text

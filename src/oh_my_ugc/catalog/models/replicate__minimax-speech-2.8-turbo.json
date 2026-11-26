@@ -1,0 +1,19 @@
+{
+ "id": "replicate/minimax-speech-2.8-turbo",
+ "provider": "replicate",
+ "model": "minimax/speech-2.8-turbo",
+ "name": "MiniMax Speech 2.8 Turbo",
+ "task": "speech",
+ "inputs": {
+  "text": "text",
+  "voice": "voice_id",
+  "speed": {
+   "param": "speed",
+   "as": "float"
+  }
+ },
+ "extra": {
+  "audio_format": "mp3"
+ },
+ "notes": "No word timings; they are aligned locally. Price is read from the model page."
+}

@@ -1,0 +1,38 @@
+{
+ "id": "replicate/seedream-4.5",
+ "provider": "replicate",
+ "model": "bytedance/seedream-4.5",
+ "name": "Seedream 4.5 (edit)",
+ "task": "image_edit",
+ "inputs": {
+  "prompt": "prompt",
+  "reference_images": {
+   "param": "image_input",
+   "as": "list"
+  },
+  "aspect_ratio": "aspect_ratio"
+ },
+ "extra": {
+  "size": "2K",
+  "max_images": 1,
+  "sequential_image_generation": "disabled"
+ },
+ "limits": {
+  "aspect_ratios": [
+   "1:1",
+   "4:3",
+   "3:4",
+   "16:9",
+   "9:16",
+   "3:2",
+   "2:3",
+   "21:9"
+  ],
+  "max_references": 14
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.04
+ },
+ "notes": "Kept actor identity and exact label text in spikes."
+}

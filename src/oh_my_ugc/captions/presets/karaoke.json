@@ -1,0 +1,20 @@
+{
+  "name": "Karaoke",
+  "description": "The whole line stays up and fills in as it is spoken. Calm and readable for interviews and podcasts.",
+  "font": "Montserrat ExtraBold",
+  "size": 0.046,
+  "case": "none",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFD23F",
+  "emphasis_color": "#FFD23F",
+  "outline": 0.08,
+  "shadow": 0.04,
+  "mode": "karaoke",
+  "max_words": 7,
+  "max_chars": 26,
+  "lines": 2,
+  "enter": "fade",
+  "active_anim": "none",
+  "emphasis_scale": 1.0,
+  "position": 0.7
+}

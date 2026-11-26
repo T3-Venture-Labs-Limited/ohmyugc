@@ -1,0 +1,19 @@
+{
+ "id": "replicate/background-remover",
+ "provider": "replicate",
+ "model": "851-labs/background-remover",
+ "name": "Background remover",
+ "task": "background_removal",
+ "inputs": {
+  "image": "image"
+ },
+ "extra": {
+  "format": "png",
+  "background_type": "rgba"
+ },
+ "price": {
+  "unit": "predict_second",
+  "default": 0.000225,
+  "typical_seconds": 3.0
+ }
+}

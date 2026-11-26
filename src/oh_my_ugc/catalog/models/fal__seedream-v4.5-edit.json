@@ -1,0 +1,21 @@
+{
+ "id": "fal/seedream-v4.5-edit",
+ "provider": "fal",
+ "model": "fal-ai/bytedance/seedream/v4.5/edit",
+ "name": "Seedream 4.5 (edit)",
+ "task": "image_edit",
+ "inputs": {
+  "prompt": "prompt",
+  "reference_images": {
+   "param": "image_urls",
+   "as": "list"
+  }
+ },
+ "limits": {
+  "max_references": 10
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.04
+ }
+}

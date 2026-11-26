@@ -1,0 +1,34 @@
+name: Model request
+description: Ask for an image, video, avatar or voice model to be added to the catalog.
+labels: [model]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model and provider
+      placeholder: "bytedance/seedance-2.5 on Replicate"
+    validations:
+      required: true
+  - type: dropdown
+    id: task
+    attributes:
+      label: What for?
+      options: [Storyboard frames, Video clips, Talking avatar, Lip sync, Voice, Background removal, Writing or product check]
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the model page or API docs
+    validations:
+      required: true
+  - type: textarea
+    id: price
+    attributes:
+      label: Price
+      description: How the provider charges (per second, per image, per 1,000 characters) and where you saw it.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything unusual about its inputs?
+      description: For example a parameter missing from the provider's schema, or a first-frame input with an odd name.

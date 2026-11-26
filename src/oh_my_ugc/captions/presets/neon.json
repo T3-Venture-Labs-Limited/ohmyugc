@@ -1,0 +1,20 @@
+{
+  "name": "Neon",
+  "description": "Crisp white capitals with a cyan glow. Good on dark footage.",
+  "font": "Montserrat ExtraBold",
+  "size": 0.052,
+  "case": "upper",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFFFFF",
+  "emphasis_color": "#FF4FD8",
+  "outline_color": "#00E5FF",
+  "outline": 0.12,
+  "blur": 0.16,
+  "shadow": 0.0,
+  "max_words": 3,
+  "max_chars": 18,
+  "enter": "fade",
+  "active_anim": "pop",
+  "active_scale": 1.08,
+  "position": 0.68
+}

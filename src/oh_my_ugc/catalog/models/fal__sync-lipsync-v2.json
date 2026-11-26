@@ -1,0 +1,18 @@
+{
+ "id": "fal/sync-lipsync-v2",
+ "provider": "fal",
+ "model": "fal-ai/sync-lipsync/v2",
+ "name": "Sync Lipsync 2",
+ "task": "lipsync",
+ "inputs": {
+  "video": "video_url",
+  "audio": "audio_url"
+ },
+ "extra": {
+  "sync_mode": "cut_off"
+ },
+ "price": {
+  "unit": "minute",
+  "default": 3.0
+ }
+}

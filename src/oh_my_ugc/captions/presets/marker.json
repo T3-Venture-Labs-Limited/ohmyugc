@@ -1,0 +1,21 @@
+{
+  "name": "Marker",
+  "description": "Handwritten words with a yellow highlighter behind the one being spoken.",
+  "font": "Permanent Marker",
+  "size": 0.054,
+  "case": "none",
+  "text_color": "#111111",
+  "active_color": "#111111",
+  "emphasis_color": "#E0115F",
+  "box": "line",
+  "box_color": "#FFE14D",
+  "outline": 0.0,
+  "shadow": 0.0,
+  "max_words": 3,
+  "max_chars": 18,
+  "enter": "none",
+  "active_anim": "pop",
+  "emphasis_scale": 1.06,
+  "position": 0.68,
+  "active_scale": 1.06
+}

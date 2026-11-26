@@ -1,0 +1,43 @@
+{
+ "id": "replicate/veo-3.1-fast",
+ "provider": "replicate",
+ "model": "google/veo-3.1-fast",
+ "name": "Veo 3.1 Fast",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": "image",
+  "last_frame": "last_frame",
+  "duration": {
+   "param": "duration",
+   "as": "int"
+  },
+  "resolution": "resolution",
+  "aspect_ratio": "aspect_ratio",
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  },
+  "seed": {
+   "param": "seed",
+   "as": "int"
+  }
+ },
+ "limits": {
+  "durations": [
+   4,
+   6,
+   8
+  ],
+  "resolutions": [
+   "720p",
+   "1080p"
+  ],
+  "aspect_ratios": [
+   "16:9",
+   "9:16"
+  ]
+ },
+ "native_audio": true,
+ "notes": "Price is read from the model page."
+}

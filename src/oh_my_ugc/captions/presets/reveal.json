@@ -1,0 +1,20 @@
+{
+  "name": "Reveal",
+  "description": "Words appear one by one as they are said, building the sentence.",
+  "font": "Poppins ExtraBold",
+  "size": 0.05,
+  "case": "none",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFD400",
+  "emphasis_color": "#FFD400",
+  "mode": "reveal",
+  "outline": 0.08,
+  "shadow": 0.04,
+  "max_words": 6,
+  "max_chars": 24,
+  "lines": 2,
+  "enter": "none",
+  "active_anim": "pop",
+  "active_scale": 1.06,
+  "position": 0.7
+}

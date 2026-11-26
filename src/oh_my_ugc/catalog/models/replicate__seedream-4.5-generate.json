@@ -1,0 +1,32 @@
+{
+ "id": "replicate/seedream-4.5-generate",
+ "provider": "replicate",
+ "model": "bytedance/seedream-4.5",
+ "name": "Seedream 4.5",
+ "task": "image_generation",
+ "inputs": {
+  "prompt": "prompt",
+  "aspect_ratio": "aspect_ratio"
+ },
+ "extra": {
+  "size": "2K",
+  "max_images": 1,
+  "sequential_image_generation": "disabled"
+ },
+ "limits": {
+  "aspect_ratios": [
+   "1:1",
+   "4:3",
+   "3:4",
+   "16:9",
+   "9:16",
+   "3:2",
+   "2:3",
+   "21:9"
+  ]
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.04
+ }
+}

@@ -1,0 +1,52 @@
+schema: spec-driven
+
+context: |
+  oh-my-ugc is a free, open-source, self-hosted alternative to MakeUGC and Arcads: it turns
+  manually uploaded product photos, brand context and a script into UGC-style video ads with AI
+  actors. Users bring their own API keys (Replicate, fal, OpenRouter, ElevenLabs, Fish Audio)
+  and pay providers directly; there is no account, credit system or watermark.
+
+  Sibling projects with the same scaffold and conventions: clipyyy, short-stock and popcaps
+  (github.com/T3-Venture-Labs-Limited). The popcaps caption engine is reused for captions.
+
+  Tech stack: Python 3.11-3.12 (FastAPI, SQLite job queue, httpx), uv, ruff, pytest; React 19,
+  Vite, Tailwind 4, TypeScript, TanStack Query, vitest; ffmpeg with libass. JSON CLI
+  (`oh-my-ugc`, alias `omu`) for scripts and AI agents. Docker. CI on Linux and macOS
+  (Apple Silicon and Intel).
+
+  Constraints: manual product uploads only (no Shopify or other store integrations); model
+  catalog must handle model churn (live discovery plus curated entries); never print or log
+  API keys; plain-English errors; cost shown before spending and recorded after; every web UI
+  control must be click-tested at desktop and 390 px before release; no italic accent words or
+  eyebrow labels above headings in the UI; its own visual identity distinct from the siblings.
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing

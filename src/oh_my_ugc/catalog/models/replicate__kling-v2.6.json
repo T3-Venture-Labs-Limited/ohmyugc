@@ -1,0 +1,53 @@
+{
+ "id": "replicate/kling-v2.6",
+ "provider": "replicate",
+ "model": "kwaivgi/kling-v2.6",
+ "name": "Kling 2.6",
+ "task": "image_to_video",
+ "inputs": {
+  "prompt": "prompt",
+  "first_frame": "start_image",
+  "duration": {
+   "param": "duration",
+   "as": "int"
+  },
+  "aspect_ratio": "aspect_ratio",
+  "audio": {
+   "param": "generate_audio",
+   "as": "bool"
+  }
+ },
+ "limits": {
+  "durations": [
+   5,
+   10
+  ],
+  "resolutions": [
+   "720p"
+  ],
+  "aspect_ratios": [
+   "16:9",
+   "9:16",
+   "1:1"
+  ]
+ },
+ "native_audio": true,
+ "price": {
+  "unit": "second",
+  "default": 0.07,
+  "table": [
+   {
+    "when": {
+     "audio": false
+    },
+    "price": 0.07
+   },
+   {
+    "when": {
+     "audio": true
+    },
+    "price": 0.14
+   }
+  ]
+ }
+}

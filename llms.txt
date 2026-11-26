@@ -1,0 +1,10 @@
+# oh-my-ugc
+
+> Free, open-source UGC ad maker. Product photos, brand context and a script in; AI-actor video ads out. Self-hosted, bring your own Replicate, fal, OpenRouter, ElevenLabs or Fish Audio keys. No credits, no watermark, and the real product photo is used wherever the label must be exact.
+
+- Web app: `omu serve` (http://127.0.0.1:8000)
+- CLI: `omu` / `oh-my-ugc`, every command takes `--json`; see skills/oh-my-ugc/SKILL.md for the agent workflow
+- Flow: brand and product, actor, script, storyboard (frames become the clips' first frames), clips (draft then final), export (captions, music, end card, hook variants)
+- Cost: estimates before every paid step (`--estimate`), a ledger, per-project budget caps, a cache so nothing is paid for twice
+- Models: curated catalog (src/oh_my_ugc/catalog/models/*.json, add your own in ~/.oh-my-ugc/catalog) plus live discovery from OpenRouter, fal and Replicate
+- Docs: README.md, CONTRIBUTING.md

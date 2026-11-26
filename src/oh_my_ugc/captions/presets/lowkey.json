@@ -1,0 +1,20 @@
+{
+  "name": "Lowkey",
+  "description": "Small lower-case words with a soft shadow. Understated, for aesthetic and lifestyle clips.",
+  "font": "Montserrat SemiBold",
+  "size": 0.036,
+  "case": "lower",
+  "text_color": "#FFFFFF",
+  "active_color": "#FFFFFF",
+  "emphasis_color": "#FFFFFF",
+  "inactive_alpha": 0.55,
+  "outline": 0.0,
+  "shadow": 0.08,
+  "shadow_alpha": 0.5,
+  "max_words": 4,
+  "max_chars": 24,
+  "enter": "fade",
+  "active_anim": "none",
+  "emphasis_scale": 1.0,
+  "position": 0.72
+}

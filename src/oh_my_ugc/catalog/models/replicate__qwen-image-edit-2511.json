@@ -1,0 +1,39 @@
+{
+ "id": "replicate/qwen-image-edit-2511",
+ "provider": "replicate",
+ "model": "qwen/qwen-image-edit-2511",
+ "name": "Qwen Image Edit 2511",
+ "task": "image_edit",
+ "inputs": {
+  "prompt": "prompt",
+  "reference_images": {
+   "param": "image",
+   "as": "list"
+  },
+  "aspect_ratio": "aspect_ratio",
+  "seed": {
+   "param": "seed",
+   "as": "int"
+  }
+ },
+ "extra": {
+  "output_format": "png"
+ },
+ "limits": {
+  "aspect_ratios": [
+   "1:1",
+   "16:9",
+   "9:16",
+   "4:3",
+   "3:4",
+   "3:2",
+   "2:3"
+  ],
+  "max_references": 3
+ },
+ "price": {
+  "unit": "image",
+  "default": 0.03
+ },
+ "notes": "Cheapest, but misspelled small label text in spikes."
+}

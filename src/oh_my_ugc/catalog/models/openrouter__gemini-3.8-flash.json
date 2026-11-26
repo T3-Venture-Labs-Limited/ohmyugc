@@ -1,0 +1,13 @@
+{
+ "id": "openrouter/gemini-3.8-flash",
+ "provider": "openrouter",
+ "model": "google/gemini-3.8-flash",
+ "name": "Gemini 3.8 Flash",
+ "task": "llm",
+ "price": {
+  "unit": "run",
+  "default": 0.004,
+  "note": "a few thousandths of a dollar per request"
+ },
+ "inputs": {}
+}
