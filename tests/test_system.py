@@ -27,6 +27,8 @@ def fake_ffmpeg(tmp_path, name="ffmpeg", libass=True):
 
 def test_ffmpeg_search_prefers_a_build_with_libass(tmp_path, monkeypatch):
     plain, full = fake_ffmpeg(tmp_path, "plain", libass=False), fake_ffmpeg(tmp_path, "full", libass=True)
+    # A real Mac (or CI runner) may have ffmpeg-full installed; only the fake builds count here.
+    monkeypatch.setattr(media, "HOMEBREW_DIRS", ())
     monkeypatch.setenv("PATH", str(plain))
     monkeypatch.setenv("HOMEBREW_PREFIX", str(tmp_path / "brew"))
     (tmp_path / "brew" / "opt" / "ffmpeg-full").mkdir(parents=True)
