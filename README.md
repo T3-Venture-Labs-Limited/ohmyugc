@@ -13,8 +13,7 @@ so there are no credits, no watermark and no subscription. You pay the model's p
 ![Eight moments from a 25 second ad made with oh-my-ugc: a woman talks about her morning routine with a LUMA Vitamin C serum, word-by-word captions, the bottle with its exact label, and an end card with a Shop now button](docs/ad-frames.jpg)
 
 > **Every frame above is real output.** The brand, LUMA, and the actor, Maya, are made up: both were generated for the
-> demo. The ad cost $1.22, including two alternative openings and four clips that were thrown away.
-> [The breakdown is below.](#what-it-costs)
+> demo.
 
 ## Highlights
 
@@ -152,35 +151,6 @@ you press "Find new models". Adding a model is one
 | **Voiceover** (default) | A voice you pick (ElevenLabs or Fish Audio) speaks each line over a silent clip. The same voice in every shot. | consistency, and the cheapest video |
 | **The video model speaks** | Seedance, Kling or Veo say the line themselves, in sync. Seedance 2.5 takes a voice sample, so the voice stays the same. | natural lip sync in one step |
 | **Talking avatar** | A voice speaks the line and an avatar model (OmniHuman) animates the picture, or a lip-sync model is added to a silent clip. | longer talking shots |
-
-## What it costs
-
-You see the price before you press a button, and again line by line before a render. The demo ad, from the app's own
-ledger:
-
-| Step | Calls | Cost |
-|---|---|---|
-| Script, hooks and storyboard (Gemini 3.8 Flash) | 3 | $0.02 |
-| Storyboard pictures (Seedream 4.5, $0.04 each) | 5 | $0.20 |
-| Product checks (28 pictures and clip frames) | 28 | $0.10 |
-| Voice (ElevenLabs, seven lines) | 7 | $0.05 |
-| Video clips (Seedance 1.5 Pro: drafts at 480p, finals at 720p, no audio) | 10 | $0.85 |
-| **Total for a 25 s ad plus two hook variants** | 53 | **$1.22** |
-
-Four of the ten clips were thrown away and made again after the product check flagged them (a label out of frame, a
-dropper growing out of the bottom of the bottle). That is most of the clip cost.
-
-Seedance 1.5 Pro has since been retired by its providers, and the video models available now cost more:
-
-| Model | Price |
-|---|---|
-| Seedance 2.5 | $0.10 a second at 480p, $0.23 at 720p |
-| Kling 2.6 | $0.07 a second silent, $0.14 with audio |
-| Seedream 4.5 | $0.04 a picture |
-
-Thirty seconds of Seedance 2.5 at 720p is about $7. Prices change, so trust the estimate on the button. OpenRouter's
-billed amounts are recorded exactly. Replicate and fal do not report what they billed, so those calls are priced from the
-model's published rates.
 
 ## The product stays correct
 
